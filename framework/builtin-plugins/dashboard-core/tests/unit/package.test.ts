@@ -5,5 +5,6 @@ describe("plugin manifest", () => {
   it("keeps a stable package id and primary capability", () => {
     expect(manifest.id).toBe("dashboard-core");
     expect(manifest.providesCapabilities).toContain("dashboard.views");
+    expect(manifest.defaultCategory?.subcategoryId).toBe("analytics_reporting");
   });
 });

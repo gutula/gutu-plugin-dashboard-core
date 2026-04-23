@@ -5,6 +5,12 @@ export default definePackage({
   kind: "app",
   version: "0.1.0",
   displayName: "Dashboard Core",
+  defaultCategory: {
+    id: "business",
+    label: "Business",
+    subcategoryId: "analytics_reporting",
+    subcategoryLabel: "Analytics & Reporting"
+  },
   description: "Dashboard, widget, and saved view backbone.",
   extends: [],
   dependsOn: ["auth-core","org-tenant-core","role-policy-core","audit-core"],

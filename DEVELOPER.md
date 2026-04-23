@@ -38,6 +38,8 @@ Provides the dashboard and widget backbone for operator-facing metrics, saved vi
 | Package Name | `@plugins/dashboard-core` |
 | Manifest ID | `dashboard-core` |
 | Display Name | Dashboard Core |
+| Domain Group | Operational Data |
+| Default Category | Business / Analytics & Reporting |
 | Version | `0.1.0` |
 | Kind | `app` |
 | Trust Tier | `first-party` |
@@ -167,7 +169,7 @@ console.log("action", publishDashboardViewAction.id);
 | Typecheck | Yes | `bun run typecheck` |
 | Lint | Yes | `bun run lint` |
 | Test | Yes | `bun run test` |
-| Unit | Yes | 1 file(s) |
+| Unit | Yes | 2 file(s) |
 | Contracts | Yes | 2 file(s) |
 | Integration | No | No integration files found |
 | Migrations | No | No migration files found |
@@ -196,6 +198,7 @@ console.log("action", publishDashboardViewAction.id);
 - No dedicated integration test lane is exported in this repo today; validation currently leans on build, lint, typecheck, and test lanes.
 - The plugin owns durable data state, but it does not yet ship a dedicated migration verification lane in this repo.
 - No standalone plugin-owned event, job, or workflow catalog is exported yet; compose it through actions, resources, and the surrounding Gutu runtime.
+- The repo does not yet export a domain parity catalog with owned entities, reports, settings surfaces, and exception queues.
 
 ### Recommended next
 

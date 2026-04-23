@@ -14,6 +14,7 @@ Dashboard, widget, and saved view backbone.
 | --- | --- |
 | Repo kind | First-party plugin |
 | Domain group | Operational Data |
+| Default category | Business / Analytics & Reporting |
 | Primary focus | dashboards, widgets, saved views |
 | Best when | You need a governed domain boundary with explicit contracts and independent release cadence. |
 | Composes through | Actions+Resources+UI |
@@ -38,9 +39,10 @@ This tier is justified because unit coverage exists, and contract coverage exist
 
 ## Verified Capability Summary
 
-- Group: **Operational Data**
+- Domain group: **Operational Data**
+- Default category: **Business / Analytics & Reporting**
 - Verification surface: **Build+Typecheck+Lint+Test+Contracts**
-- Tests discovered: **3** total files across unit, contract lanes
+- Tests discovered: **4** total files across unit, contract lanes
 - Integration model: **Actions+Resources+UI**
 - Database support: **postgres + sqlite**
 
@@ -67,6 +69,12 @@ This tier is justified because unit coverage exists, and contract coverage exist
 | Jobs | 0 | No job catalog exported |
 | Workflows | 0 | No workflow catalog exported |
 | UI | Present | base UI surface, admin contributions |
+| Owned Entities | 0 | No explicit domain catalog yet |
+| Reports | 0 | No explicit report catalog yet |
+| Exception Queues | 0 | No explicit exception queues yet |
+| Operational Scenarios | 0 | No explicit operational scenario matrix yet |
+| Settings Surfaces | 0 | No explicit settings surface catalog yet |
+| ERPNext Refs | 0 | No direct ERPNext reference mapping declared |
 
 ## Quick Start For Integrators
 
@@ -93,7 +101,7 @@ Use the root repo scripts for day-to-day work **after the workspace is bootstrap
 ## Current Test Coverage
 
 - Root verification scripts: `bun run build`, `bun run typecheck`, `bun run lint`, `bun run test`, `bun run test:contracts`, `bun run test:unit`, `bun run docs:check`
-- Unit files: 1
+- Unit files: 2
 - Contracts files: 2
 - Integration files: 0
 - Migrations files: 0
