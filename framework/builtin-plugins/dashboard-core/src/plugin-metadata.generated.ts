@@ -226,6 +226,22 @@ export const dashboardPluginMetadata = [
     }
   },
   {
+    id: "collab-pages-core",
+    displayName: "Collaborative Pages (BlockSuite)",
+    description: "Notion-style block-based pages — paragraphs, headings, lists, tables, code, callouts, LaTeX, images, attachments, embedded databases. BlockSuite engine, realtime collab.",
+    repoName: "gutu-plugin-collab-pages-core",
+    domainGroup: "Content and Experience",
+    trustTier: "first-party",
+    reviewTier: "R1",
+    maturity: "Scaffolded",
+    defaultCategory: {
+      id: "content_experience",
+      label: "Content & Experience",
+      subcategoryId: "office_productivity",
+      subcategoryLabel: "Office Productivity"
+    }
+  },
+  {
     id: "community-core",
     displayName: "Community Core",
     description: "Community, groups, and membership backbone.",
@@ -335,6 +351,22 @@ export const dashboardPluginMetadata = [
       label: "Content & Experience",
       subcategoryId: "documents",
       subcategoryLabel: "Documents"
+    }
+  },
+  {
+    id: "document-editor-core",
+    displayName: "Document Editor (Univer)",
+    description: "Word-class rich-text editor — paragraphs, headings, lists, tables, images, comments, headers/footers, DOCX I/O, realtime collab.",
+    repoName: "gutu-plugin-document-editor-core",
+    domainGroup: "Content and Experience",
+    trustTier: "first-party",
+    reviewTier: "R1",
+    maturity: "Scaffolded",
+    defaultCategory: {
+      id: "content_experience",
+      label: "Content & Experience",
+      subcategoryId: "office_productivity",
+      subcategoryLabel: "Office Productivity"
     }
   },
   {
@@ -802,6 +834,86 @@ export const dashboardPluginMetadata = [
     }
   },
   {
+    id: "slides-core",
+    displayName: "Slides (Univer)",
+    description: "Presentation editor — slides, shapes, text, images, realtime collab. Built on Univer.",
+    repoName: "gutu-plugin-slides-core",
+    domainGroup: "Content and Experience",
+    trustTier: "first-party",
+    reviewTier: "R1",
+    maturity: "Scaffolded",
+    defaultCategory: {
+      id: "content_experience",
+      label: "Content & Experience",
+      subcategoryId: "office_productivity",
+      subcategoryLabel: "Office Productivity"
+    }
+  },
+  {
+    id: "spreadsheet-core",
+    displayName: "Spreadsheet (Univer)",
+    description: "Excel-class spreadsheet editor built on Univer — formulas, conditional formatting, data validation, charts, pivot tables, XLSX I/O, realtime collab via Yjs.",
+    repoName: "gutu-plugin-spreadsheet-core",
+    domainGroup: "Content and Experience",
+    trustTier: "first-party",
+    reviewTier: "R1",
+    maturity: "Scaffolded",
+    defaultCategory: {
+      id: "content_experience",
+      label: "Content & Experience",
+      subcategoryId: "office_productivity",
+      subcategoryLabel: "Office Productivity"
+    }
+  },
+  {
+    id: "storage-local",
+    displayName: "Storage — Local Filesystem",
+    description: "Storage adapter for the local filesystem. Per-tenant subdirectory isolation, streaming put/get, multipart, HMAC-signed URLs.",
+    repoName: "gutu-plugin-storage-local",
+    domainGroup: "Platform Backbone",
+    trustTier: "first-party",
+    reviewTier: "R1",
+    maturity: "Scaffolded",
+    defaultCategory: {
+      id: "platform_infrastructure",
+      label: "Platform & Infrastructure",
+      subcategoryId: "storage_adapters",
+      subcategoryLabel: "Storage Adapters"
+    }
+  },
+  {
+    id: "storage-s3",
+    displayName: "Storage — S3-compatible",
+    description: "S3-compatible adapter. Works with AWS S3, Cloudflare R2, MinIO, Wasabi, Backblaze B2, DigitalOcean Spaces, Scaleway, Linode, Vultr, Oracle, IBM Cloud, and custom endpoints.",
+    repoName: "gutu-plugin-storage-s3",
+    domainGroup: "Platform Backbone",
+    trustTier: "first-party",
+    reviewTier: "R1",
+    maturity: "Scaffolded",
+    defaultCategory: {
+      id: "platform_infrastructure",
+      label: "Platform & Infrastructure",
+      subcategoryId: "storage_adapters",
+      subcategoryLabel: "Storage Adapters"
+    }
+  },
+  {
+    id: "storage-core",
+    displayName: "Storage Core",
+    description: "Storage orchestration plugin — declares backends, hydrates the registry, ships presign + test-connection actions and the admin CRUD page.",
+    repoName: "gutu-plugin-storage-core",
+    domainGroup: "Platform Backbone",
+    trustTier: "first-party",
+    reviewTier: "R1",
+    maturity: "Scaffolded",
+    defaultCategory: {
+      id: "platform_infrastructure",
+      label: "Platform & Infrastructure",
+      subcategoryId: "storage_adapters",
+      subcategoryLabel: "Storage Adapters"
+    }
+  },
+  {
     id: "subscriptions-core",
     displayName: "Subscriptions Core",
     description: "Subscription plans, billing cycles, renewals, pauses, and service-period truth for recurring commercial models.",
@@ -895,6 +1007,22 @@ export const dashboardPluginMetadata = [
       label: "User Management",
       subcategoryId: "directory_profiles",
       subcategoryLabel: "Directory & Profiles"
+    }
+  },
+  {
+    id: "whiteboard-core",
+    displayName: "Whiteboard (BlockSuite Edgeless)",
+    description: "Miro-class infinite canvas — shapes, connectors, brushes, mindmaps, frames, sticky notes. Realtime collab via Yjs.",
+    repoName: "gutu-plugin-whiteboard-core",
+    domainGroup: "Content and Experience",
+    trustTier: "first-party",
+    reviewTier: "R1",
+    maturity: "Scaffolded",
+    defaultCategory: {
+      id: "content_experience",
+      label: "Content & Experience",
+      subcategoryId: "office_productivity",
+      subcategoryLabel: "Office Productivity"
     }
   },
   {
